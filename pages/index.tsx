@@ -1,5 +1,4 @@
 import Navbar from '../components/home/navbar';
-import Header from '../components/home/header';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
     <main className="bg-white w-full h-screen relative overflow-hidden">
       <Navbar />
       <div className="container-lg">
-        <Header />
         <div className="text-center absolute bottom-20 left-0 right-0">
           <div className="space-y-6">
             <motion.h1
