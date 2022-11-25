@@ -26,18 +26,17 @@ export default function BigMenu({ setIsBigMenuShow, typeMenu }: BigMenu) {
   return (
     <>
       <motion.div
-        className="w-8/12 flex flex-row mx-auto h-96 pt-6"
-        initial={{ opacity: 0, scale: 0.5 }}
+        className="w-8/12 flex flex-row mx-auto h-80 pt-6"
+        initial={{ opacity: 0, scale: 0.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-          duration: 0.8,
-          delay: 0.1,
+          duration: 0.6,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         onMouseLeave={() => setIsBigMenuShow(false)}
         onMouseEnter={() => setIsBigMenuShow(true)}
       >
-        <div className="bg-slate-50 rounded-2xl w-full">
+        <div className="bg-slate-50 rounded-2xl w-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.08)] p-8">
           {bigMenuType(typeMenu)}
         </div>
       </motion.div>
