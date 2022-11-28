@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="flex flex-row justify-center space-x-8 pt-6">
         <ul
           onMouseLeave={() => setIsBigMenuShow(false)}
-          className="flex flex-row space-x-8 font-semibold text-blue-900 text-xl tracking-tight"
+          className="flex flex-row space-x-8 font-semibold text-white text-xl tracking-tight"
         >
           {menu.items.map(({ title, linkTarget, showBigMenu, type }) => {
             return (
@@ -72,7 +72,7 @@ export default function Navbar() {
             );
           })}
         </ul>
-        <button className="bg-gradient-to-r from-blue-700 to-fuchsia-700 rounded-xl py-2 px-4 text-xl font-semibold text-white tracking-tight hover:from-blue-600 hover:to-fuchsia-600 hover:ease-linear transition ease-in duration-150">
+        <button className="bg-white rounded-xl py-2 px-4 text-xl font-semibold text-gray-700 tracking-tight hover:from-blue-600 hover:to-fuchsia-600 hover:ease-linear transition ease-in duration-150">
           Explorer
         </button>
       </div>
